@@ -1,7 +1,7 @@
 # Prompt the user to input the task, priority level, and if the task is time-bound.
-Task = input("Describe the task you would like to do today:")
-Priority = input("Enter the priority level (high, medium, low):").strip().lower()
-Time_Bound = input("Is the task time-bound? (yes/no):").strip().lower()
+Task = input("Enter your task:")
+Priority = input("Priority (high/medium/low):").strip().lower()
+Time_Bound = input("Is it time-bound? (yes/no):").strip().lower()
 
 match Priority:
     case "high":
