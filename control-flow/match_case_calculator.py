@@ -3,7 +3,7 @@ num1 = int(input("Enter the first number:"))
 num2 = int(input("Enter the second number:"))
 
 # Prompting the user for the operation to be performed
-operation = input("Choose the operation (+, -, *, /):").stript()
+operation = input("Choose the operation (+, -, *, /):").strip()
 
 match operation:
     case "+":
