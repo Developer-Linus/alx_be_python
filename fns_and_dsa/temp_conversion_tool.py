@@ -17,7 +17,7 @@ def main():
     try:
         # Prompt for temperature input
         temp_input = input("Enter the temperature to convert: ").strip()
-        if not temp_input.replace('.', '', 1).isdigit() and not temp_input.lstrip('-').replace('.', '', 1).isdigit():
+        if not temp_input.replace('.', '', 1).lstrip('-').isdigit():
             raise ValueError("Invalid temperature. Please enter a numeric value.")
         temp_input = float(temp_input)
 
@@ -29,10 +29,10 @@ def main():
         # Perform conversion based on the unit
         if temp_state == "F":
             temp_celsius = convert_to_celsius(temp_input)
-            print(f"{temp_input}°F is {temp_celsius:.2f}°C")
+            print(f"{temp_input:.1f}°F is {temp_celsius:.1f}°C")
         elif temp_state == "C":
             temp_fahrenheit = convert_to_fahrenheit(temp_input)
-            print(f"{temp_input}°C is {temp_fahrenheit:.2f}°F")
+            print(f"{temp_input:.1f}°C is {temp_fahrenheit:.1f}°F")
 
     except ValueError as e:
         print(e)
