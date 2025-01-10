@@ -11,7 +11,7 @@ def main():
         display_menu()
         choice = input("Enter your choice:")
         if choice == "1":
-            item = input("Enter the item to add to shopping list:").strip()
+            item = input("Enter the item to add:").strip()
             if item:
                 shopping_list.append(item)
             else:
