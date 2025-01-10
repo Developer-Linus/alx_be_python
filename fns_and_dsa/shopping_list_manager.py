@@ -26,8 +26,8 @@ def main():
             print(shopping_list)
         elif choice == "4":
             print("Goodbye!")
+            break
         else:
             print("Invalid choice. Try again")
-        break
 if __name__ == "__main__":
     main()
