@@ -12,7 +12,11 @@ def convert_to_fahrenheit(celsius):
 
 # Prompt for temperature input
 temp_input = input("Enter the temperature to convert: ").strip()
-temp_input = float(temp_input)
+# Check if input is numeric
+if temp_input.replace('.', '', 1).lstrip('-').isdigit():
+    temp_input = float(temp_input)  # Convert to float if valid
+else:
+    print("Invalid temperature. Please enter a numeric value.")
 
 # Prompt for unit input
 temp_state = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
