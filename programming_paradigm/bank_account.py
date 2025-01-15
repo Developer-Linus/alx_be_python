@@ -13,7 +13,7 @@ class BankAccount:
         else:
             print("The account balance is insufficient to withdraw {amount}.")
     def display_balance(self):
-        print("Current balance: {self.account_balance}")
+        print("Current Balance: {self.account_balance}")
 
     
 # Instantiating a class
