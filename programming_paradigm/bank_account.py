@@ -14,9 +14,6 @@ class BankAccount:
        else:
             return False
     def display_balance(self):
-        print("Current Balance: {self.account_balance}")
+        return f"Current Balance: {self.account_balance}"
 
-    
-# Instantiating a class
-account = BankAccount(200)
     
